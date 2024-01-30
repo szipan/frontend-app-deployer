@@ -1,5 +1,5 @@
 import { join } from 'path';
-import { Aspects, IAspect, CfnResource, Fn, DockerImage, Aws } from 'aws-cdk-lib';
+import { Aspects, IAspect, CfnResource, Fn, DockerImage, Aws, CfnOutput } from 'aws-cdk-lib';
 import { DnsValidatedCertificate } from 'aws-cdk-lib/aws-certificatemanager';
 import {
   CfnDistribution,
@@ -8,6 +8,7 @@ import {
 import { HostedZone } from 'aws-cdk-lib/aws-route53';
 import { Source } from 'aws-cdk-lib/aws-s3-deployment';
 import { Construct, IConstruct } from 'constructs';
+import { FRONTEND_APP_URL } from './common/constant';
 import { SolutionBucket } from './common/solution-bucket';
 import { FrontendAppPortal, CNFrontendAppPortalProps, DomainProps } from './frontend-app/frontend-app-portal';
 import { generateFrontendConfig, FRONTEND_CONFIG_PATH } from './frontend-app/private/solution-config';
@@ -129,6 +130,11 @@ export class FrontendAppDeployer extends Construct {
         ],
       );
     }
+
+    new CfnOutput(this, FRONTEND_APP_URL, {
+      description: 'The url of clickstream console',
+      value: frontendApp.frontendAppUrl,
+    }).overrideLogicalId(FRONTEND_APP_URL);
   }
 }
 

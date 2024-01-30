@@ -114,7 +114,7 @@ export class FrontendAppPortal extends Construct {
   public readonly distribution: IDistribution;
   public readonly portalBucket: IBucket;
   public readonly logBucket: IBucket;
-  public readonly controlPlaneUrl: string;
+  public readonly frontendAppUrl: string;
   public readonly bucketDeployment: BucketDeployment;
   private origins: Array<CfnDistribution.OriginProperty | IResolvable> | IResolvable;
   private cacheBehaviors: Array<CfnDistribution.CacheBehaviorProperty | IResolvable> | IResolvable;
@@ -147,7 +147,7 @@ export class FrontendAppPortal extends Construct {
       const distribution = this.createDistributionForCNRegions(portalBucket, distributionDescription, props);
       this.distribution = distribution.distribution;
       portalBucketPolicyStatement = distribution.portalBucketPolicyStatement;
-      this.controlPlaneUrl = 'https://' + props.cnFrontendAppPortalProps.domainName;
+      this.frontendAppUrl = 'https://' + props.cnFrontendAppPortalProps.domainName;
     } else {
       const distribution = this.createDistribution(portalBucket, distributionDescription, props);
       this.distribution = distribution.distribution;
@@ -160,9 +160,9 @@ export class FrontendAppPortal extends Construct {
           target: RecordTarget.fromAlias(new CloudFrontTarget(this.distribution)),
         });
 
-        this.controlPlaneUrl = 'https://' + record.domainName;
+        this.frontendAppUrl = 'https://' + record.domainName;
       } else {
-        this.controlPlaneUrl = 'https://' + this.distribution.distributionDomainName;
+        this.frontendAppUrl = 'https://' + this.distribution.distributionDomainName;
       }
     }
 

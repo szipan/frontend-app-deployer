@@ -65,5 +65,5 @@ export const PARAMETER_LABEL_DOMAIN_NAME = 'Domain Name';
 export const PARAMETER_LABEL_CERTIFICATE_ARN = 'Certificate ARN';
 
 // the outputs of stacks
-export const OUTPUT_CONTROL_PLANE_URL = 'FrontendAppURL';
-export const OUTPUT_CONTROL_PLANE_BUCKET = 'FrontendAppBucket';
+export const FRONTEND_APP_URL = 'FrontendAppURL';
+export const FRONTEND_APP_BUCKET = 'FrontendAppBucket';

@@ -50,6 +50,5 @@ junit.xml
 tsconfig.json
 !/API.md
 !/.projenrc.ts
-/frontend/*
-/cdk.out
-/yarn.lock
+cdk.out
+frontend/*
