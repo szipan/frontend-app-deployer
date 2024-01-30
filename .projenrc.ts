@@ -2,7 +2,7 @@ import { awscdk } from 'projen';
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'szipan',
   authorAddress: 'szipan@outlook.com',
-  cdkVersion: '2.1.0',
+  cdkVersion: '2.83.1',
   defaultReleaseBranch: 'main',
   jsiiVersion: '~5.0.0',
   name: 'frontend-app-deployer',
