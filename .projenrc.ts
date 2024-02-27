@@ -1,4 +1,5 @@
 import { awscdk } from 'projen';
+const version = '1.0.0';
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'szipan',
   authorAddress: 'szipan@outlook.com',
@@ -8,10 +9,15 @@ const project = new awscdk.AwsCdkConstructLibrary({
   name: 'frontend-app-deployer',
   projenrcTs: true,
   repositoryUrl: 'https://github.com/szipan/frontend-app-deployer.git',
+  publishToPypi: {
+    distName: 'frontend-app-deployer',
+    module: 'frontend_app_deployer',
+  },
 
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
   // devDeps: [],             /* Build dependencies for this module. */
   // packageName: undefined,  /* The "name" in package.json. */
 });
+project.addFields({ version });
 project.synth();

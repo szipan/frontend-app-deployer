@@ -132,7 +132,7 @@ export class FrontendAppDeployer extends Construct {
     }
 
     new CfnOutput(this, FRONTEND_APP_URL, {
-      description: 'The url of clickstream console',
+      description: 'The url of your frontend app',
       value: frontendApp.frontendAppUrl,
     }).overrideLogicalId(FRONTEND_APP_URL);
   }

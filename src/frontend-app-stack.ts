@@ -16,6 +16,31 @@ import { Construct } from 'constructs';
 import { FrontendAppDeployer } from './index';
 
 export interface CloudFrontFrontendAppStackProps extends StackProps {
+  /**
+  * Indicate whether to create stack in CN regions
+  *
+  * @default - false.
+  */
+  readonly targetToCNRegions?: boolean;
+
+  /**
+   * Whether to use custom domain name
+   */
+  readonly useCustomDomainName?: boolean;
+
+  readonly buildScript: string;
+
+  readonly baseImageForBuilding: string;
+
+  readonly domainName?: string;
+
+  readonly iamCertificateId?: string;
+
+  readonly recordName?: string;
+
+  readonly hostedZoneName?: string;
+
+  readonly hostedZoneId?: string;
 }
 
 export class CloudFrontFrontendAppStack extends Stack {
@@ -23,12 +48,15 @@ export class CloudFrontFrontendAppStack extends Stack {
     super(scope, id, props);
 
     new FrontendAppDeployer(this, 'frontend-app', {
-      buildScript: 'export APP_PATH=/tmp/app && export NODE_OPTIONS=--openssl-legacy-provider && mkdir $APP_PATH && cd ./frontend/ && find -L . -type f -not -path "./build/*" -not -path "./node_modules/*" \
-      -exec cp --parents {} $APP_PATH \\; && cd $APP_PATH && yarn install --loglevel error && yarn run build --loglevel error && cp -r ./build/* /asset-output/',
-      baseImageForBuilding: 'public.ecr.aws/docker/library/node:18',
-      useCustomDomainName: true,
-      domainName: 'clickstream-test.nwcdlab.com',
-      iamCertificateId: 'ASCAXBETMEGCQQ3WCVKPB'
+      targetToCNRegions: props?.targetToCNRegions,
+      buildScript: props?.buildScript ?? '',
+      baseImageForBuilding: props?.baseImageForBuilding ?? '',
+      useCustomDomainName: props?.useCustomDomainName,
+      domainName: props?.domainName,
+      iamCertificateId: props?.iamCertificateId,
+      recordName: props?.recordName,
+      hostedZoneName: props?.hostedZoneName,
+      hostedZoneId: props?.hostedZoneId,
     });
   }
 }

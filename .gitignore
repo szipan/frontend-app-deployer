@@ -51,4 +51,4 @@ tsconfig.json
 !/API.md
 !/.projenrc.ts
 cdk.out
-frontend/*
+frontend
