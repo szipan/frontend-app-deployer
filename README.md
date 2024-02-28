@@ -25,6 +25,7 @@ npm install frontend-app-deployer
 ## How to Use the Construct
 Here, an example TypeScript code snippet is used to illustrate the usage of the construct.
 
+```
 new FrontendAppDeployer(this, 'example-frontend-app', {
   targetToCNRegions: false,
   buildScript: 'export APP_PATH=/tmp/app && export NODE_OPTIONS=--openssl-legacy-provider && mkdir $APP_PATH && cd ./frontend/ && find -L . -type f -not -path "./build/*" -not -path "./node_modules/*" \
@@ -34,6 +35,7 @@ new FrontendAppDeployer(this, 'example-frontend-app', {
   domainName: 'example.com',
   iamCertificateId: 'ASCAXTESTCERTNAMEVKPB',
 });
+```
 
 ## Parameters of the Construct
     - targetToCNRegions, boolean. true, if the application should be deployed to China regions(ZHY or BJS); false, if the application should be deployed to global regions.
