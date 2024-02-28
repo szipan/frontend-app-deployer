@@ -22,5 +22,10 @@ dist
 tsconfig.tsbuildinfo
 /.eslintrc.json
 !.jsii
+cdk.context.json
+.cdk.staging/
+frontend/
+cdk.out/
+test/
 /.gitattributes
 /.projenrc.ts

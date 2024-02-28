@@ -49,6 +49,9 @@ junit.xml
 .jsii
 tsconfig.json
 !/API.md
+cdk.context.json
+.cdk.staging/
+frontend/
+cdk.out/
+test/
 !/.projenrc.ts
-cdk.out
-frontend

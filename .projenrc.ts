@@ -1,5 +1,7 @@
 import { awscdk } from 'projen';
 const version = '1.0.0';
+const tempDirectories = ["cdk.context.json", ".cdk.staging/", "frontend/", "cdk.out/", "test/"];
+
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'szipan',
   authorAddress: 'szipan@outlook.com',
@@ -20,4 +22,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
   // packageName: undefined,  /* The "name" in package.json. */
 });
 project.addFields({ version });
+project.gitignore.exclude(...tempDirectories);
+project.npmignore?.exclude(...tempDirectories);
 project.synth();
