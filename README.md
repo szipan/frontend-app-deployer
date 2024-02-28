@@ -44,6 +44,7 @@ new FrontendAppDeployer(this, 'example-frontend-app', {
     - useCustomDomainName, boolean. true, if the application should have a custom domain associated to the CloudFront distribution; false, if the application will use the AWS-generated domain name for the CloudFront distribution. 
     - domainName, string. If using in China retions, specify the custom domain name which is under your control, or else, it can be left blank.
     - iamCertificateId, string. If using in China retions, specify the certificate ID, or else, it can be left blank. Please follow this [guide](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/additional-resources.html#upload-ssl-certificate-to-iam) to upload the certificate and get the ID of it.
+    - assetPath, string. The folder where the frontend assets reside.
 
 ## License
 
