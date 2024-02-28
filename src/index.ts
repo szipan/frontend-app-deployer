@@ -39,6 +39,8 @@ export interface FrontendAppDeployerProps {
   readonly hostedZoneName?: string;
 
   readonly hostedZoneId?: string;
+
+  readonly assetPath: string;
 }
 
 export class FrontendAppDeployer extends Construct {
@@ -80,7 +82,7 @@ export class FrontendAppDeployer extends Construct {
 
     const frontendApp = new FrontendAppPortal(this, 'frontend_app', {
       frontendProps: {
-        assetPath: join(__dirname, '..'),
+        assetPath: join(props?.assetPath ?? '', '..'),
 
         dockerImage: DockerImage.fromRegistry((props?.baseImageForBuilding ?? '').toString()),
         buildCommand: [

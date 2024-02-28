@@ -2,39 +2,39 @@
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### FrontendAppDeployer <a name="FrontendAppDeployer" id="frontend-app-deployer.FrontendAppDeployer"></a>
+### FrontendAppDeployer <a name="FrontendAppDeployer" id="@szipan/frontend-app-deployer.FrontendAppDeployer"></a>
 
-#### Initializers <a name="Initializers" id="frontend-app-deployer.FrontendAppDeployer.Initializer"></a>
+#### Initializers <a name="Initializers" id="@szipan/frontend-app-deployer.FrontendAppDeployer.Initializer"></a>
 
 ```typescript
-import { FrontendAppDeployer } from 'frontend-app-deployer'
+import { FrontendAppDeployer } from '@szipan/frontend-app-deployer'
 
 new FrontendAppDeployer(scope: Construct, id: string, props?: FrontendAppDeployerProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#frontend-app-deployer.FrontendAppDeployer.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#frontend-app-deployer.FrontendAppDeployer.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#frontend-app-deployer.FrontendAppDeployer.Initializer.parameter.props">props</a></code> | <code><a href="#frontend-app-deployer.FrontendAppDeployerProps">FrontendAppDeployerProps</a></code> | *No description.* |
+| <code><a href="#@szipan/frontend-app-deployer.FrontendAppDeployer.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#@szipan/frontend-app-deployer.FrontendAppDeployer.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@szipan/frontend-app-deployer.FrontendAppDeployer.Initializer.parameter.props">props</a></code> | <code><a href="#@szipan/frontend-app-deployer.FrontendAppDeployerProps">FrontendAppDeployerProps</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="frontend-app-deployer.FrontendAppDeployer.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@szipan/frontend-app-deployer.FrontendAppDeployer.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="frontend-app-deployer.FrontendAppDeployer.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@szipan/frontend-app-deployer.FrontendAppDeployer.Initializer.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-##### `props`<sup>Optional</sup> <a name="props" id="frontend-app-deployer.FrontendAppDeployer.Initializer.parameter.props"></a>
+##### `props`<sup>Optional</sup> <a name="props" id="@szipan/frontend-app-deployer.FrontendAppDeployer.Initializer.parameter.props"></a>
 
-- *Type:* <a href="#frontend-app-deployer.FrontendAppDeployerProps">FrontendAppDeployerProps</a>
+- *Type:* <a href="#@szipan/frontend-app-deployer.FrontendAppDeployerProps">FrontendAppDeployerProps</a>
 
 ---
 
@@ -42,11 +42,11 @@ new FrontendAppDeployer(scope: Construct, id: string, props?: FrontendAppDeploye
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#frontend-app-deployer.FrontendAppDeployer.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@szipan/frontend-app-deployer.FrontendAppDeployer.toString">toString</a></code> | Returns a string representation of this construct. |
 
 ---
 
-##### `toString` <a name="toString" id="frontend-app-deployer.FrontendAppDeployer.toString"></a>
+##### `toString` <a name="toString" id="@szipan/frontend-app-deployer.FrontendAppDeployer.toString"></a>
 
 ```typescript
 public toString(): string
@@ -58,21 +58,21 @@ Returns a string representation of this construct.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#frontend-app-deployer.FrontendAppDeployer.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@szipan/frontend-app-deployer.FrontendAppDeployer.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="frontend-app-deployer.FrontendAppDeployer.isConstruct"></a>
+##### ~~`isConstruct`~~ <a name="isConstruct" id="@szipan/frontend-app-deployer.FrontendAppDeployer.isConstruct"></a>
 
 ```typescript
-import { FrontendAppDeployer } from 'frontend-app-deployer'
+import { FrontendAppDeployer } from '@szipan/frontend-app-deployer'
 
 FrontendAppDeployer.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
 
-###### `x`<sup>Required</sup> <a name="x" id="frontend-app-deployer.FrontendAppDeployer.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@szipan/frontend-app-deployer.FrontendAppDeployer.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -84,11 +84,11 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#frontend-app-deployer.FrontendAppDeployer.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@szipan/frontend-app-deployer.FrontendAppDeployer.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="frontend-app-deployer.FrontendAppDeployer.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@szipan/frontend-app-deployer.FrontendAppDeployer.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -103,12 +103,12 @@ The tree node.
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### FrontendAppDeployerProps <a name="FrontendAppDeployerProps" id="frontend-app-deployer.FrontendAppDeployerProps"></a>
+### FrontendAppDeployerProps <a name="FrontendAppDeployerProps" id="@szipan/frontend-app-deployer.FrontendAppDeployerProps"></a>
 
-#### Initializer <a name="Initializer" id="frontend-app-deployer.FrontendAppDeployerProps.Initializer"></a>
+#### Initializer <a name="Initializer" id="@szipan/frontend-app-deployer.FrontendAppDeployerProps.Initializer"></a>
 
 ```typescript
-import { FrontendAppDeployerProps } from 'frontend-app-deployer'
+import { FrontendAppDeployerProps } from '@szipan/frontend-app-deployer'
 
 const frontendAppDeployerProps: FrontendAppDeployerProps = { ... }
 ```
@@ -117,19 +117,30 @@ const frontendAppDeployerProps: FrontendAppDeployerProps = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#frontend-app-deployer.FrontendAppDeployerProps.property.baseImageForBuilding">baseImageForBuilding</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#frontend-app-deployer.FrontendAppDeployerProps.property.buildScript">buildScript</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#frontend-app-deployer.FrontendAppDeployerProps.property.domainName">domainName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#frontend-app-deployer.FrontendAppDeployerProps.property.hostedZoneId">hostedZoneId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#frontend-app-deployer.FrontendAppDeployerProps.property.hostedZoneName">hostedZoneName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#frontend-app-deployer.FrontendAppDeployerProps.property.iamCertificateId">iamCertificateId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#frontend-app-deployer.FrontendAppDeployerProps.property.recordName">recordName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#frontend-app-deployer.FrontendAppDeployerProps.property.targetToCNRegions">targetToCNRegions</a></code> | <code>boolean</code> | Indicate whether to create stack in CN regions. |
-| <code><a href="#frontend-app-deployer.FrontendAppDeployerProps.property.useCustomDomainName">useCustomDomainName</a></code> | <code>boolean</code> | Whether to use custom domain name. |
+| <code><a href="#@szipan/frontend-app-deployer.FrontendAppDeployerProps.property.assetPath">assetPath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@szipan/frontend-app-deployer.FrontendAppDeployerProps.property.baseImageForBuilding">baseImageForBuilding</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@szipan/frontend-app-deployer.FrontendAppDeployerProps.property.buildScript">buildScript</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@szipan/frontend-app-deployer.FrontendAppDeployerProps.property.domainName">domainName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@szipan/frontend-app-deployer.FrontendAppDeployerProps.property.hostedZoneId">hostedZoneId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@szipan/frontend-app-deployer.FrontendAppDeployerProps.property.hostedZoneName">hostedZoneName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@szipan/frontend-app-deployer.FrontendAppDeployerProps.property.iamCertificateId">iamCertificateId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@szipan/frontend-app-deployer.FrontendAppDeployerProps.property.recordName">recordName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@szipan/frontend-app-deployer.FrontendAppDeployerProps.property.targetToCNRegions">targetToCNRegions</a></code> | <code>boolean</code> | Indicate whether to create stack in CN regions. |
+| <code><a href="#@szipan/frontend-app-deployer.FrontendAppDeployerProps.property.useCustomDomainName">useCustomDomainName</a></code> | <code>boolean</code> | Whether to use custom domain name. |
 
 ---
 
-##### `baseImageForBuilding`<sup>Required</sup> <a name="baseImageForBuilding" id="frontend-app-deployer.FrontendAppDeployerProps.property.baseImageForBuilding"></a>
+##### `assetPath`<sup>Required</sup> <a name="assetPath" id="@szipan/frontend-app-deployer.FrontendAppDeployerProps.property.assetPath"></a>
+
+```typescript
+public readonly assetPath: string;
+```
+
+- *Type:* string
+
+---
+
+##### `baseImageForBuilding`<sup>Required</sup> <a name="baseImageForBuilding" id="@szipan/frontend-app-deployer.FrontendAppDeployerProps.property.baseImageForBuilding"></a>
 
 ```typescript
 public readonly baseImageForBuilding: string;
@@ -139,7 +150,7 @@ public readonly baseImageForBuilding: string;
 
 ---
 
-##### `buildScript`<sup>Required</sup> <a name="buildScript" id="frontend-app-deployer.FrontendAppDeployerProps.property.buildScript"></a>
+##### `buildScript`<sup>Required</sup> <a name="buildScript" id="@szipan/frontend-app-deployer.FrontendAppDeployerProps.property.buildScript"></a>
 
 ```typescript
 public readonly buildScript: string;
@@ -149,7 +160,7 @@ public readonly buildScript: string;
 
 ---
 
-##### `domainName`<sup>Optional</sup> <a name="domainName" id="frontend-app-deployer.FrontendAppDeployerProps.property.domainName"></a>
+##### `domainName`<sup>Optional</sup> <a name="domainName" id="@szipan/frontend-app-deployer.FrontendAppDeployerProps.property.domainName"></a>
 
 ```typescript
 public readonly domainName: string;
@@ -159,7 +170,7 @@ public readonly domainName: string;
 
 ---
 
-##### `hostedZoneId`<sup>Optional</sup> <a name="hostedZoneId" id="frontend-app-deployer.FrontendAppDeployerProps.property.hostedZoneId"></a>
+##### `hostedZoneId`<sup>Optional</sup> <a name="hostedZoneId" id="@szipan/frontend-app-deployer.FrontendAppDeployerProps.property.hostedZoneId"></a>
 
 ```typescript
 public readonly hostedZoneId: string;
@@ -169,7 +180,7 @@ public readonly hostedZoneId: string;
 
 ---
 
-##### `hostedZoneName`<sup>Optional</sup> <a name="hostedZoneName" id="frontend-app-deployer.FrontendAppDeployerProps.property.hostedZoneName"></a>
+##### `hostedZoneName`<sup>Optional</sup> <a name="hostedZoneName" id="@szipan/frontend-app-deployer.FrontendAppDeployerProps.property.hostedZoneName"></a>
 
 ```typescript
 public readonly hostedZoneName: string;
@@ -179,7 +190,7 @@ public readonly hostedZoneName: string;
 
 ---
 
-##### `iamCertificateId`<sup>Optional</sup> <a name="iamCertificateId" id="frontend-app-deployer.FrontendAppDeployerProps.property.iamCertificateId"></a>
+##### `iamCertificateId`<sup>Optional</sup> <a name="iamCertificateId" id="@szipan/frontend-app-deployer.FrontendAppDeployerProps.property.iamCertificateId"></a>
 
 ```typescript
 public readonly iamCertificateId: string;
@@ -189,7 +200,7 @@ public readonly iamCertificateId: string;
 
 ---
 
-##### `recordName`<sup>Optional</sup> <a name="recordName" id="frontend-app-deployer.FrontendAppDeployerProps.property.recordName"></a>
+##### `recordName`<sup>Optional</sup> <a name="recordName" id="@szipan/frontend-app-deployer.FrontendAppDeployerProps.property.recordName"></a>
 
 ```typescript
 public readonly recordName: string;
@@ -199,7 +210,7 @@ public readonly recordName: string;
 
 ---
 
-##### `targetToCNRegions`<sup>Optional</sup> <a name="targetToCNRegions" id="frontend-app-deployer.FrontendAppDeployerProps.property.targetToCNRegions"></a>
+##### `targetToCNRegions`<sup>Optional</sup> <a name="targetToCNRegions" id="@szipan/frontend-app-deployer.FrontendAppDeployerProps.property.targetToCNRegions"></a>
 
 ```typescript
 public readonly targetToCNRegions: boolean;
@@ -212,7 +223,7 @@ Indicate whether to create stack in CN regions.
 
 ---
 
-##### `useCustomDomainName`<sup>Optional</sup> <a name="useCustomDomainName" id="frontend-app-deployer.FrontendAppDeployerProps.property.useCustomDomainName"></a>
+##### `useCustomDomainName`<sup>Optional</sup> <a name="useCustomDomainName" id="@szipan/frontend-app-deployer.FrontendAppDeployerProps.property.useCustomDomainName"></a>
 
 ```typescript
 public readonly useCustomDomainName: boolean;

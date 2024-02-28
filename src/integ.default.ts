@@ -11,4 +11,5 @@ new CloudFrontFrontendAppStack(mockApp, 'frontend-app-stack', {
   useCustomDomainName: false,
   domainName: 'clickstream-test.nwcdlab.com',
   iamCertificateId: 'ASCAXBETMEGCQQ3WCVKPB',
+  assetPath: __dirname,
 });

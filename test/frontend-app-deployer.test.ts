@@ -26,6 +26,7 @@ describe('CloudFrontFrontendAppStack', () => {
     useCustomDomainName: false,
     domainName: '',
     iamCertificateId: '',
+    assetPath: __dirname,
   });
   const commonTemplate = Template.fromStack(commonPortalStack);
 

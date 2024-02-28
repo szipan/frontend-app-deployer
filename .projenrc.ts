@@ -1,6 +1,6 @@
 import { awscdk } from 'projen';
-const version = '1.0.0';
-const tempDirectories = ["cdk.context.json", ".cdk.staging/", "frontend/", "cdk.out/", "test/"];
+const version = '1.0.1';
+const tempDirectories = ['cdk.context.json', '.cdk.staging/', 'frontend/', 'cdk.out/', 'test/', 'node_modules/'];
 
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'szipan',
@@ -8,7 +8,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   cdkVersion: '2.83.1',
   defaultReleaseBranch: 'main',
   jsiiVersion: '~5.0.0',
-  name: 'frontend-app-deployer',
+  name: '@szipan/frontend-app-deployer',
   projenrcTs: true,
   repositoryUrl: 'https://github.com/szipan/frontend-app-deployer.git',
   publishToPypi: {

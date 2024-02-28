@@ -41,6 +41,8 @@ export interface CloudFrontFrontendAppStackProps extends StackProps {
   readonly hostedZoneName?: string;
 
   readonly hostedZoneId?: string;
+
+  readonly assetPath: string;
 }
 
 export class CloudFrontFrontendAppStack extends Stack {
@@ -57,6 +59,7 @@ export class CloudFrontFrontendAppStack extends Stack {
       recordName: props?.recordName,
       hostedZoneName: props?.hostedZoneName,
       hostedZoneId: props?.hostedZoneId,
+      assetPath: props?.assetPath ?? '',
     });
   }
 }

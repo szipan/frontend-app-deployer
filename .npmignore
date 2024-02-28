@@ -27,5 +27,6 @@ cdk.context.json
 frontend/
 cdk.out/
 test/
+node_modules/
 /.gitattributes
 /.projenrc.ts
