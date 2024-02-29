@@ -8,7 +8,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   cdkVersion: '2.83.1',
   defaultReleaseBranch: 'main',
   jsiiVersion: '~5.0.0',
-  name: '@szipan/frontend-app-deployer',
+  name: 'frontend-app-deployer',
   projenrcTs: true,
   repositoryUrl: 'https://github.com/szipan/frontend-app-deployer.git',
   publishToPypi: {

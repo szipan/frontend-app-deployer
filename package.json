@@ -1,5 +1,5 @@
 {
-  "name": "@szipan/frontend-app-deployer",
+  "name": "frontend-app-deployer",
   "repository": {
     "type": "git",
     "url": "https://github.com/szipan/frontend-app-deployer.git"

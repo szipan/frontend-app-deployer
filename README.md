@@ -8,6 +8,7 @@ This CDK construct will deploy your frontend applications, like a React JS appli
 
 ## Preparations before Using the Construct
 To user AWS CDK, you have to:
+```
     - Make sure you have an AWS account
     - Configure [credential of aws cli][configure-aws-cli]
     - Install Node.js LTS version 18.17.0 or later
@@ -16,6 +17,7 @@ To user AWS CDK, you have to:
     - Initialize the CDK toolkit stack into AWS environment (only for deploying via [AWS CDK][aws-cdk] for the first time), and run `npx cdk bootstrap`
     - A domain. You will use this domain to access the frontend application. This is required for AWS China Regions, and is optional for AWS Regions.
     - The SSL must be associated with the given domain. Follow this [guide](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/additional-resources.html#upload-ssl-certificate-to-iam) to upload SSL certificate to IAM. This is required for AWS China Regions, but is not recommended for AWS Regions.
+```
 
 Make sure to request or import the ACM certificate in the US East (N. Virginia) Region (us-east-1). This is not required for AWS China Regions, and is optional for AWS Regions.
 
