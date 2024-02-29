@@ -7,7 +7,7 @@ A CDK construct which deploy a frontend application on S3, capped by CloudFront 
 This CDK construct will deploy your frontend applications, like a React JS application, to an AWS S3 bucket, while adding a CloudFront distribution in front of the S3 bucket. Though a series of parameters of the construct, you can control the behaviour of it, like deploying the application to China regions or to global regions, using your own domain name for the application or how to build the application, etc.
 
 ## Preparations before Using the Construct
-To user AWS CDK, you have to:
+To use AWS CDK, you have to:
 ```
     - Make sure you have an AWS account
     - Configure [credential of aws cli][configure-aws-cli]
