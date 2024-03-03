@@ -35,6 +35,7 @@ new FrontendAppDeployer(this, 'example-frontend-app', {
   useCustomDomainName: true,
   domainName: 'example.com',
   iamCertificateId: 'ASCAXTESTCERTNAMEVKPB',
+  assetPath: __dirname
 });
 ```
 
