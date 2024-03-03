@@ -7,7 +7,7 @@ A CDK construct which deploy a frontend application on S3, capped by CloudFront 
 This CDK construct will deploy your frontend applications, like a React JS application, to an AWS S3 bucket, while adding a CloudFront distribution in front of the S3 bucket. Though a series of parameters of the construct, you can control the behaviour of it, like deploying the application to China regions or to global regions, using your own domain name for the application or how to build the application, etc.
 
 ## Preparations before Using the Construct
-To user AWS CDK, you have to:
+To use AWS CDK, you have to:
 ```
     - Make sure you have an AWS account
     - Configure [credential of aws cli][configure-aws-cli]
@@ -18,7 +18,6 @@ To user AWS CDK, you have to:
     - A domain. You will use this domain to access the frontend application. This is required for AWS China Regions, and is optional for AWS Regions.
     - The SSL must be associated with the given domain. Follow this [guide](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/additional-resources.html#upload-ssl-certificate-to-iam) to upload SSL certificate to IAM. This is required for AWS China Regions, but is not recommended for AWS Regions.
 ```
-
 Make sure to request or import the ACM certificate in the US East (N. Virginia) Region (us-east-1). This is not required for AWS China Regions, and is optional for AWS Regions.
 
 ## How to Install the Construct
@@ -36,6 +35,7 @@ new FrontendAppDeployer(this, 'example-frontend-app', {
   useCustomDomainName: true,
   domainName: 'example.com',
   iamCertificateId: 'ASCAXTESTCERTNAMEVKPB',
+  assetPath: __dirname
 });
 ```
 
